@@ -14,20 +14,20 @@ a{color:inherit;text-decoration:none}
 .hero{position:relative;width:100%;overflow:hidden}
 .hero img.bg{width:100%;height:auto;display:block}
 header{position:absolute;top:0;left:0;right:0;z-index:4;display:flex;justify-content:space-between;align-items:center;padding:22px 20px}
-.logo{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:30px;letter-spacing:-.01em;line-height:1;color:#000;text-shadow:0 0 14px rgba(255,255,255,.95),0 1px 0 #fff}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:30px;letter-spacing:-.01em;line-height:1;color:#000;text-shadow:0 0 12px rgba(255,255,255,.95),0 1px 0 #fff}
 .logo em{font-style:italic;font-weight:600}
 .menu-btn{width:32px;height:24px;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;padding:2px 0;filter:drop-shadow(0 0 6px rgba(255,255,255,.95))}
 .menu-btn span{display:block;height:3px;background:#000;border-radius:2px}
-.hero-text{position:absolute;top:72px;left:20px;right:20px;z-index:3;text-align:center;padding:18px 12px 26px;background:linear-gradient(to bottom,rgba(250,250,247,.95) 0%,rgba(250,250,247,.75) 60%,rgba(250,250,247,0) 100%)}
-.hero-text h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:40px;line-height:1.0;letter-spacing:-.01em;color:#000}
+.hero-text{position:absolute;top:76px;left:20px;right:20px;z-index:3;text-align:center}
+.hero-text h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:40px;line-height:1.0;letter-spacing:-.01em;color:#000;text-shadow:0 0 14px rgba(255,255,255,.95),0 2px 10px rgba(255,255,255,.8)}
 .hero-text h1 em{font-style:italic;font-weight:600}
-.hero-text p{font-size:15px;line-height:1.6;font-weight:600;max-width:340px;margin:20px auto 0;color:#000}
-.marquee{position:absolute;left:0;right:0;bottom:92px;z-index:3;overflow:hidden;white-space:nowrap;background:rgba(250,250,247,.88);padding:10px 0}
-.marquee-inner{display:inline-block;animation:scroll 20s linear infinite;font-weight:700;font-size:16px}
-.marquee-inner span{padding:0 14px}
+.hero-text p{font-size:15px;line-height:1.6;font-weight:700;max-width:340px;margin:20px auto 0;color:#000;text-shadow:0 0 12px rgba(255,255,255,.95),0 1px 6px rgba(255,255,255,.9)}
+.marquee{position:absolute;left:0;right:0;bottom:100px;z-index:3;overflow:hidden;white-space:nowrap}
+.marquee-inner{display:inline-block;animation:scroll 26s linear infinite;font-weight:700;font-size:17px;text-shadow:0 1px 8px rgba(255,255,255,.95),0 0 10px rgba(255,255,255,.8)}
+.marquee-inner span{padding:0 10px}
 @keyframes scroll{to{transform:translateX(-50%)}}
-.c-orange{color:#e67e00}.c-purple{color:#8e2f8e}.c-green{color:#2e7d32}.c-blue{color:#1565c0}
-.cta{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:4;white-space:nowrap;background:linear-gradient(135deg,#5b2a9a,#2a0a4a 55%,#000);color:#fff;font-weight:700;font-size:16px;padding:16px 30px;border-radius:999px;box-shadow:0 12px 28px rgba(0,0,0,.4)}
+.c-pink{color:#d81b60}.c-purple{color:#7b1fa2}
+.cta{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:4;white-space:nowrap;background:linear-gradient(135deg,#ec407a,#a21caf 50%,#4a148c);color:#fff;font-weight:700;font-size:16px;padding:16px 30px;border-radius:999px;box-shadow:0 12px 28px rgba(0,0,0,.35)}
 @media(min-width:801px){
 .hero{height:100svh}
 .hero img.bg{height:100%;object-fit:cover;object-position:center}
@@ -50,7 +50,7 @@ header{position:absolute;top:0;left:0;right:0;z-index:4;display:flex;justify-con
 <h1>Vitaminas <em>reais</em><br>para pessoas reais</h1>
 <p>Suplementos simples, para o dia a dia, em Maputo.</p>
 </div>
-<div class="marquee"><div class="marquee-inner"><span class="c-orange">Vitaminas reais</span><span class="c-purple">para pessoas reais</span><span class="c-green">Suplementos simples</span><span class="c-blue">em Maputo</span><span class="c-orange">Vitaminas reais</span><span class="c-purple">para pessoas reais</span><span class="c-green">Suplementos simples</span><span class="c-blue">em Maputo</span></div></div>
+<div class="marquee"><div class="marquee-inner"><span class="c-pink">Vitaminas reais para pessoas reais</span><span>•</span><span class="c-purple">Suplementos simples, para o dia a dia, em Maputo.</span><span>•</span><span class="c-pink">Vitaminas reais para pessoas reais</span><span>•</span><span class="c-purple">Suplementos simples, para o dia a dia, em Maputo.</span><span>•</span></div></div>
 <a class="cta" href="#">Ver suplementos</a>
 </section>
 </main>
