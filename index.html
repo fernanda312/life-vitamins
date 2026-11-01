@@ -6,26 +6,33 @@
 <title>LIFE vitamins — Vitaminas reais para pessoas reais</title>
 <meta name="description" content="LIFE vitamins.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Inter,system-ui,sans-serif;background:#fafaf7;color:#111;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-.hero{position:relative;height:100svh;min-height:620px;overflow:hidden}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-header{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:24px 20px}
-.logo{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:28px;letter-spacing:-.01em;line-height:1}
-.logo em{font-style:italic;font-weight:400}
-.menu-btn{width:32px;height:24px;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;padding:2px 0}
-.menu-btn span{display:block;height:2.5px;background:#111;border-radius:2px}
-.hero-text{position:relative;z-index:2;text-align:center;padding:28px 20px 60px;background:linear-gradient(to bottom,rgba(250,250,247,.92) 0%,rgba(250,250,247,.55) 55%,rgba(250,250,247,0) 100%)}
-.hero-text h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:38px;line-height:1.02;letter-spacing:-.01em}
-.hero-text h1 em{font-style:italic;font-weight:400}
-.hero-text p{font-size:15px;line-height:1.6;max-width:340px;margin:22px auto 0;color:#222}
+.hero{position:relative;width:100%;overflow:hidden}
+.hero img.bg{width:100%;height:auto;display:block}
+header{position:absolute;top:0;left:0;right:0;z-index:4;display:flex;justify-content:space-between;align-items:center;padding:22px 20px}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:30px;letter-spacing:-.01em;line-height:1;color:#000;text-shadow:0 0 14px rgba(255,255,255,.95),0 1px 0 #fff}
+.logo em{font-style:italic;font-weight:600}
+.menu-btn{width:32px;height:24px;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;padding:2px 0;filter:drop-shadow(0 0 6px rgba(255,255,255,.95))}
+.menu-btn span{display:block;height:3px;background:#000;border-radius:2px}
+.hero-text{position:absolute;top:72px;left:20px;right:20px;z-index:3;text-align:center;padding:18px 12px 26px;background:linear-gradient(to bottom,rgba(250,250,247,.95) 0%,rgba(250,250,247,.75) 60%,rgba(250,250,247,0) 100%)}
+.hero-text h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:40px;line-height:1.0;letter-spacing:-.01em;color:#000}
+.hero-text h1 em{font-style:italic;font-weight:600}
+.hero-text p{font-size:15px;line-height:1.6;font-weight:600;max-width:340px;margin:20px auto 0;color:#000}
+.marquee{position:absolute;left:0;right:0;bottom:92px;z-index:3;overflow:hidden;white-space:nowrap;background:rgba(250,250,247,.88);padding:10px 0}
+.marquee-inner{display:inline-block;animation:scroll 20s linear infinite;font-weight:700;font-size:16px}
+.marquee-inner span{padding:0 14px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.c-orange{color:#e67e00}.c-purple{color:#8e2f8e}.c-green{color:#2e7d32}.c-blue{color:#1565c0}
+.cta{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:4;white-space:nowrap;background:linear-gradient(135deg,#5b2a9a,#2a0a4a 55%,#000);color:#fff;font-weight:700;font-size:16px;padding:16px 30px;border-radius:999px;box-shadow:0 12px 28px rgba(0,0,0,.4)}
 @media(min-width:801px){
-header{padding:28px 40px}
+.hero{height:100svh}
+.hero img.bg{height:100%;object-fit:cover;object-position:center}
 .logo{font-size:34px}
-.hero-text{padding-top:36px}
+.hero-text{top:84px}
 .hero-text h1{font-size:96px}
 .hero-text p{font-size:17px;max-width:560px}
 }
@@ -34,7 +41,7 @@ header{padding:28px 40px}
 <body>
 <main>
 <section class="hero">
-<img class="bg" src="images/hero-vitamins.jpg" alt="Vitaminas e multivitaminas LIFE vitamins">
+<img class="bg" src="images/hero-vitamins-extended.jpg" alt="Vitaminas e multivitaminas LIFE vitamins">
 <header>
 <a class="logo" href="#">LIFE <em>vitamins</em></a>
 <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -43,6 +50,8 @@ header{padding:28px 40px}
 <h1>Vitaminas <em>reais</em><br>para pessoas reais</h1>
 <p>Suplementos simples, para o dia a dia, em Maputo.</p>
 </div>
+<div class="marquee"><div class="marquee-inner"><span class="c-orange">Vitaminas reais</span><span class="c-purple">para pessoas reais</span><span class="c-green">Suplementos simples</span><span class="c-blue">em Maputo</span><span class="c-orange">Vitaminas reais</span><span class="c-purple">para pessoas reais</span><span class="c-green">Suplementos simples</span><span class="c-blue">em Maputo</span></div></div>
+<a class="cta" href="#">Ver suplementos</a>
 </section>
 </main>
 </body>
