@@ -6,32 +6,28 @@
 <title>LIFE vitamins — Vitaminas reais para pessoas reais</title>
 <meta name="description" content="LIFE vitamins.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,system-ui,sans-serif;background:#fff;color:#111;-webkit-font-smoothing:antialiased}
+body{font-family:Inter,system-ui,sans-serif;background:#fafaf7;color:#111;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-header{display:flex;justify-content:space-between;align-items:center;padding:28px 40px}
-.logo{font-family:"Playfair Display",Georgia,serif;font-size:34px;letter-spacing:-.02em;line-height:1}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 20px}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:28px;letter-spacing:-.01em;line-height:1}
 .logo em{font-style:italic;font-weight:400}
-.menu-btn{width:44px;height:44px;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:center;gap:7px}
-.menu-btn span{display:block;height:3px;background:#111;border-radius:2px}
-.hero{text-align:center;padding:20px 20px 0}
-.hero h1{font-family:"Playfair Display",Georgia,serif;font-weight:400;font-size:clamp(52px,9vw,118px);line-height:.95;letter-spacing:-.02em;max-width:1000px;margin:0 auto}
-.hero h1 em{font-style:italic}
-.hero p.sub{font-size:17px;line-height:1.6;max-width:560px;margin:28px auto 0;color:#222}
-.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:32px auto 48px}
-.btn{display:inline-block;padding:16px 34px;border-radius:999px;font-size:15px;font-weight:600}
-.btn.black{background:#111;color:#fff}
-.btn.outline{border:1.5px solid #111;color:#111}
+.menu-btn{width:32px;height:24px;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;padding:2px 0}
+.menu-btn span{display:block;height:2.5px;background:#111;border-radius:2px}
+.hero{text-align:center;padding:44px 20px 0}
+.hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:38px;line-height:1.02;letter-spacing:-.01em;margin:0 auto}
+.hero h1 em{font-style:italic;font-weight:400}
+.hero p.sub{font-size:15px;line-height:1.6;max-width:340px;margin:26px auto 40px;color:#222}
 .hero-img{width:100%;display:block}
-.hero-img img{width:100%;height:auto;max-height:78vh;object-fit:contain;display:block;background:#fff}
-@media(max-width:800px){
-header{padding:20px}
-.logo{font-size:28px}
-.hero{padding:8px 16px 0}
-.hero h1{font-size:clamp(44px,13vw,64px)}
-.hero-img img{max-height:none}
+.hero-img img{width:100%;height:auto;display:block}
+@media(min-width:801px){
+header{padding:28px 40px}
+.logo{font-size:34px}
+.hero{padding:56px 20px 0}
+.hero h1{font-size:96px}
+.hero p.sub{font-size:17px;max-width:560px}
 }
 </style>
 </head>
@@ -44,10 +40,6 @@ header{padding:20px}
 <section class="hero">
 <h1>Vitaminas <em>reais</em><br>para pessoas reais</h1>
 <p class="sub">Suplementos simples, para o dia a dia, em Maputo.</p>
-<div class="btns">
-<a class="btn black" href="#">Ver vitaminas</a>
-<a class="btn outline" href="#">Saber mais</a>
-</div>
 </section>
 <div class="hero-img"><img src="images/hero-vitamins.jpg" alt="Vitaminas e multivitaminas LIFE vitamins"></div>
 </main>
