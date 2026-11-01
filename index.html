@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LIFE vitamins — Vitaminas reais para pessoas reais</title>
+<meta name="description" content="LIFE vitamins, Maputo. Suplementos simples, para o dia a dia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,system-ui,sans-serif;background:#fff;color:#111;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+header{display:flex;justify-content:space-between;align-items:center;padding:28px 40px}
+.logo{font-family:"Playfair Display",Georgia,serif;font-size:34px;letter-spacing:-.02em;line-height:1}
+.logo em{font-style:italic;font-weight:400}
+.menu-btn{width:44px;height:44px;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:center;gap:7px}
+.menu-btn span{display:block;height:3px;background:#111;border-radius:2px}
+nav#menu{display:none;position:fixed;inset:0;background:#fff;z-index:50;padding:28px 40px}
+nav#menu.open{display:block}
+nav#menu .top{display:flex;justify-content:space-between;align-items:center}
+nav#menu a.big{display:block;font-family:"Playfair Display",Georgia,serif;font-size:44px;margin:28px 0}
+.close{font-size:36px;background:transparent;border:0;cursor:pointer}
+.hero{text-align:center;padding:20px 20px 0}
+.hero h1{font-family:"Playfair Display",Georgia,serif;font-weight:400;font-size:clamp(52px,9vw,118px);line-height:.95;letter-spacing:-.02em;max-width:1000px;margin:0 auto}
+.hero h1 em{font-style:italic}
+.hero p.sub{font-size:17px;line-height:1.6;max-width:560px;margin:28px auto 0;color:#222}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:32px auto 48px}
+.btn{display:inline-block;padding:16px 34px;border-radius:999px;font-size:15px;font-weight:600;letter-spacing:.01em}
+.btn.black{background:#111;color:#fff}
+.btn.outline{border:1.5px solid #111;color:#111}
+.hero-img{width:100%;display:block}
+.hero-img img{width:100%;height:auto;max-height:78vh;object-fit:contain;display:block;background:#fff}
+section{padding:80px 40px;max-width:1100px;margin:0 auto}
+section h2{font-family:"Playfair Display",Georgia,serif;font-weight:400;font-size:clamp(36px,5vw,64px);line-height:1.05;letter-spacing:-.01em;margin-bottom:20px}
+section p{font-size:17px;line-height:1.7;color:#222;max-width:640px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
+.step{border-top:2px solid #111;padding-top:20px}
+.step b{font-family:"Playfair Display",Georgia,serif;font-size:28px;display:block;margin-bottom:10px}
+.step p{font-size:15px}
+footer{border-top:1px solid #ddd;padding:40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:14px;color:#444}
+footer .flogo{font-family:"Playfair Display",Georgia,serif;font-size:24px;color:#111}
+@media(max-width:800px){
+header{padding:20px}
+.logo{font-size:28px}
+.hero{padding:8px 16px 0}
+.hero h1{font-size:clamp(44px,13vw,64px)}
+section{padding:56px 20px}
+.steps{grid-template-columns:1fr}
+.hero-img img{max-height:none}
+footer{padding:32px 20px}
+}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="#">LIFE <em>vitamins</em></a>
+<button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menu').classList.add('open')"><span></span><span></span><span></span></button>
+</header>
+<nav id="menu">
+<div class="top"><a class="logo" href="#" onclick="document.getElementById('menu').classList.remove('open')">LIFE <em>vitamins</em></a><button class="close" aria-label="Fechar" onclick="document.getElementById('menu').classList.remove('open')">×</button></div>
+<a class="big" href="#inicio" onclick="document.getElementById('menu').classList.remove('open')">Início</a>
+<a class="big" href="#sobre" onclick="document.getElementById('menu').classList.remove('open')">Sobre</a>
+<a class="big" href="#como" onclick="document.getElementById('menu').classList.remove('open')">Como funciona</a>
+</nav>
+<main id="inicio">
+<section class="hero" style="padding:20px 20px 0;max-width:none">
+<h1>Vitaminas <em>reais</em><br>para pessoas reais</h1>
+<p class="sub">Suplementos simples, para o dia a dia, em Maputo.</p>
+<div class="btns">
+<a class="btn black" href="#como">Ver vitaminas</a>
+<a class="btn outline" href="#sobre">Saber mais</a>
+</div>
+</section>
+<div class="hero-img"><img src="images/hero-vitamins.jpg" alt="Vitaminas e multivitaminas LIFE vitamins"></div>
+<section id="sobre">
+<h2>Simples, todos os dias.</h2>
+<p>Multivitaminas, Vitamina E e Vitamina D3, entre outros essenciais, para uma rotina sem complicações. Sem textos em excesso, sem promessas em excesso: o essencial, bem feito, para pessoas reais.</p>
+</section>
+<section id="como">
+<h2>Como funciona</h2>
+<div class="steps">
+<div class="step"><b>1. Escolhe</b><p>Escolhe a vitamina para a tua rotina diária.</p></div>
+<div class="step"><b>2. Encomenda</b><p>Encomenda e confirma no chat da loja.</p></div>
+<div class="step"><b>3. Recebe</b><p>Recebe em Maputo, com levantamento a combinar.</p></div>
+</div>
+</section>
+</main>
+<footer>
+<span class="flogo">LIFE <em>vitamins</em></span>
+<span>Maputo, Moçambique</span>
+<span>© 2026 LIFE vitamins. Todos os direitos reservados.</span>
+</footer>
+</body>
+</html>
