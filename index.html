@@ -11,37 +11,39 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Inter,system-ui,sans-serif;background:#fafaf7;color:#111;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-header{display:flex;justify-content:space-between;align-items:center;padding:24px 20px}
+.hero{position:relative;height:100svh;min-height:620px;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+header{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:24px 20px}
 .logo{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:28px;letter-spacing:-.01em;line-height:1}
 .logo em{font-style:italic;font-weight:400}
 .menu-btn{width:32px;height:24px;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;padding:2px 0}
 .menu-btn span{display:block;height:2.5px;background:#111;border-radius:2px}
-.hero{text-align:center;padding:44px 20px 0}
-.hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:38px;line-height:1.02;letter-spacing:-.01em;margin:0 auto}
-.hero h1 em{font-style:italic;font-weight:400}
-.hero p.sub{font-size:15px;line-height:1.6;max-width:340px;margin:26px auto 40px;color:#222}
-.hero-img{width:100%;display:block}
-.hero-img img{width:100%;height:auto;display:block}
+.hero-text{position:relative;z-index:2;text-align:center;padding:28px 20px 60px;background:linear-gradient(to bottom,rgba(250,250,247,.92) 0%,rgba(250,250,247,.55) 55%,rgba(250,250,247,0) 100%)}
+.hero-text h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:38px;line-height:1.02;letter-spacing:-.01em}
+.hero-text h1 em{font-style:italic;font-weight:400}
+.hero-text p{font-size:15px;line-height:1.6;max-width:340px;margin:22px auto 0;color:#222}
 @media(min-width:801px){
 header{padding:28px 40px}
 .logo{font-size:34px}
-.hero{padding:56px 20px 0}
-.hero h1{font-size:96px}
-.hero p.sub{font-size:17px;max-width:560px}
+.hero-text{padding-top:36px}
+.hero-text h1{font-size:96px}
+.hero-text p{font-size:17px;max-width:560px}
 }
 </style>
 </head>
 <body>
+<main>
+<section class="hero">
+<img class="bg" src="images/hero-vitamins.jpg" alt="Vitaminas e multivitaminas LIFE vitamins">
 <header>
 <a class="logo" href="#">LIFE <em>vitamins</em></a>
 <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
 </header>
-<main>
-<section class="hero">
+<div class="hero-text">
 <h1>Vitaminas <em>reais</em><br>para pessoas reais</h1>
-<p class="sub">Suplementos simples, para o dia a dia, em Maputo.</p>
+<p>Suplementos simples, para o dia a dia, em Maputo.</p>
+</div>
 </section>
-<div class="hero-img"><img src="images/hero-vitamins.jpg" alt="Vitaminas e multivitaminas LIFE vitamins"></div>
 </main>
 </body>
 </html>
